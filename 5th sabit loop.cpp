@@ -5,10 +5,15 @@ int main () {
     int detik, menit, jam, parkir, totaldetik;
     string kendaraan;
 
-    while(kendaraan != "stop") {
+    while(true) {
 
-        cout << "masukkan jenis kendaraan: ";
+        cout << "masukkan jenis kendaraan (stop utk berenti): ";
         cin >> kendaraan;
+
+        if (kendaraan == "stop") {
+            break;
+        }
+
         cout << "masukkan waktu detik: ";
         cin >> totaldetik;
     
